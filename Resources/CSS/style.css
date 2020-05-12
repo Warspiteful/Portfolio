@@ -6,17 +6,39 @@ header{
     background-color: black;
     color: #fff;
     width: 100%;
-    position: relative;
+ 
     
 }
 
-header nav li{
-    display:inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
+nav{
+    background-color: beige;
+    width:100%;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
 }
 
+nav li{
+    
+    display:inline;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.Intro{
+    background: url("../Images/Background.jpg")  no-repeat center center;
+    background-size: cover;
+    padding: 100px 0px;
+ 
+}
+
+
+.Intro h1{
+    text-align: center;
+    position: relative;
+}
 
 .sticky {
     position: fixed;
@@ -24,8 +46,16 @@ header nav li{
     width: 100%
   }
 
-body{
+body .aboutMe h1{
+    text-align: center;
+} 
 
+body .aboutMe img{
+    display: inline;
+    width: 25%;
+}
+body{
+   
 }
 
 footer{
