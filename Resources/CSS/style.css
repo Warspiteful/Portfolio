@@ -1,73 +1,92 @@
-html{
-
+html {
 }
 
-header{
-    background-color: black;
-    color: #fff;
-    width: 100%;
- 
-    
+/* Header */
+header {
+  background-color: black;
+  color: #fff;
+  width: 100%;
 }
 
-nav{
-    background-color: beige;
-    width:100%;
-    display: table;
-    margin: 0 auto;
-    text-align: center;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-nav li{
-    
-    display:inline;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 0 10px;
+nav {
+  background-color:rgb(207,185,151);
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.Intro{
-    position: relative;
-    background: url("../Images/Background.jpg")  no-repeat center center;
-    background-size: cover;
-    padding: 100px 0px;
+nav {
+  color: #4a4a4a;
+  padding: 30px 20px;
 }
 
-.Intro::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(200,128,0,.5);
+nav li {
+  display: inline;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
+.Intro {
+  position: relative;
+  background: url("../Images/Background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0px;
+}
 
-.Intro h1{
-    text-align: center;
-    position: relative;
+.Intro::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 128, 0, 0.5);
+}
+
+.Intro h1 {
+  text-align: center;
+  position: relative;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-body .aboutMe h1{
-    text-align: center;
-} 
+body .aboutMe {
+    background-color: beige;
+}
+body .aboutMe h1 {
+  text-align: center;
+  margin: 0 auto;   
+}
 
-body .aboutMe img{
-    display: inline;
+body .aboutMe img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  padding-left: 5%;
+
+}
+
+body .aboutMe .desc{
+    display: inline-block;
+    vertical-align:top;
     width: 25%;
-}
-body{
-   
+    padding-left: 5%;
 }
 
-footer{
+body {
+}
 
+footer {
 }
