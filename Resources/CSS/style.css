@@ -1,4 +1,5 @@
-html {
+html{
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -18,13 +19,11 @@ nav {
   width: 100%;
   display: table;
   margin: 0 auto;
+  color: #4a4a4a;
+  padding: 30px 0;
   text-align: center;
 }
 
-nav {
-  color: #4a4a4a;
-  padding: 30px 20px;
-}
 
 nav li {
   display: inline;
@@ -35,10 +34,12 @@ nav li {
 }
 
 .Intro {
+    margin: 0;
   position: relative;
   background: url("../Images/Background.jpg") no-repeat center center;
   background-size: cover;
   padding: 100px 0px;
+  
 }
 
 .Intro::before {
@@ -49,6 +50,7 @@ nav li {
   width: 100%;
   height: 100%;
   background-color: rgba(200, 128, 0, 0.5);
+  
 }
 
 .Intro h1 {
@@ -63,30 +65,61 @@ nav li {
 }
 
 body .aboutMe {
-    background-color: beige;
+    background-color: burlywood;
+    padding: 50px;
+    
 }
-body .aboutMe h1 {
+body h1 {
   text-align: center;
-  margin: 0 auto;   
+  margin: 0 auto; 
+  padding-bottom: 1%;  
 }
 
 body .aboutMe img {
   display: inline-block;
   width: 25%;
-  height: 50%;
+  height: 100%;
   padding-left: 5%;
-
+  
 }
 
 body .aboutMe .desc{
     display: inline-block;
     vertical-align:top;
-    width: 25%;
+    width: 50%;
     padding-left: 5%;
 }
 
+body .education{
+    text-align: center;
+    background-color: beige;
+    padding: 50px;
+}
+
+
+body .education .desc h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 body {
+    margin: 0;
 }
 
 footer {
+    
+}
+
+span .dot{
+    content: "\00B7";
+}
+
+.degree{
+    
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.desc p{
+    font-family: Helvetica, 'Times New Roman', Times, serif;
 }
