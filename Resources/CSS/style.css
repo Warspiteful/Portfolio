@@ -22,6 +22,7 @@ nav {
   color: #4a4a4a;
   padding: 30px 0;
   text-align: center;
+  
 }
 
 
@@ -92,7 +93,7 @@ body .aboutMe .desc, body .aboutMe .skills{
 
 body .education{
     text-align: center;
-    background-color: beige;
+    background-color: bisque;
     padding: 50px;
 }
 
@@ -122,4 +123,17 @@ span .dot{
 
 .desc p{
     font-family: Helvetica, 'Times New Roman', Times, serif;
+}
+
+.contact{
+    background-color: beige;
+}
+.contact p{
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
+.contact a{
+    text-decoration: underline;
+    color: blue;
 }
