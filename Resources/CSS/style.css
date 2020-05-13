@@ -83,10 +83,10 @@ body .aboutMe img {
   
 }
 
-body .aboutMe .desc{
+body .aboutMe .desc, body .aboutMe .skills{
     display: inline-block;
     vertical-align:top;
-    width: 50%;
+    width: 25%;
     padding-left: 5%;
 }
 
