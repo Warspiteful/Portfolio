@@ -2,10 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Header */
-header {
+body {
+  margin: 0;
+}
 
-  width: 100%;
+body h1 {
+  text-align: center;
+  margin: 0 auto; 
+  padding-bottom: 1%;  
 }
 
 a {
@@ -13,7 +17,18 @@ a {
   color: inherit;
 }
 
-nav {
+
+p{
+  font-family: Helvetica, 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header {
+
+  width: 100%;
+}
+
+header nav {
   background-color:rgb(207,185,151);
   width: 100%;
   display: table;
@@ -24,7 +39,7 @@ nav {
 }
 
 
-nav li {
+header nav li {
   display: inline;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -32,7 +47,9 @@ nav li {
   padding: 0 10px;
 }
 
-.Intro {
+/* Banner */
+
+.Banner {
     margin: 0;
   position: relative;
   background: url("../Images/Background.jpg") no-repeat center center;
@@ -41,7 +58,7 @@ nav li {
   
 }
 
-.Intro::before {
+.Banner::before {
   position: absolute;
   content: "";
   top: 0;
@@ -52,25 +69,21 @@ nav li {
   
 }
 
-.Intro h1 {
+.Banner h1 {
   text-align: center;
   position: relative;
 }
 
 
+/* About Me */
 
-body .aboutMe {
+.aboutMe {
     background-color: burlywood;
     padding: 50px;
     
 }
-body h1 {
-  text-align: center;
-  margin: 0 auto; 
-  padding-bottom: 1%;  
-}
 
-body .aboutMe img {
+.aboutMe img {
   display: inline-block;
   width: 25%;
   height: 100%;
@@ -78,36 +91,32 @@ body .aboutMe img {
   
 }
 
-body .aboutMe .desc, body .aboutMe .skills{
+.aboutMe .desc, .aboutMe .skills{
     display: inline-block;
     vertical-align:top;
     width: 25%;
     padding-left: 5%;
+    min-width: 10%;
 }
 
-body .education{
+/*Education*/
+
+.education{
     text-align: center;
     background-color: bisque;
     padding: 50px;
 }
 
-
-body .education .desc h2,h3,p{
+ .education .desc h2,h3,p{
     margin-top: 0;
     margin-bottom: 0;
 }
 
-body {
-    margin: 0;
+.education .dot{
+  content: "\00B7";
 }
 
-footer {
-    
-}
-
-span .dot{
-    content: "\00B7";
-}
+/*Degree*/
 
 .degree{
     
@@ -115,9 +124,8 @@ span .dot{
     font-weight: 600;
 }
 
-.desc p{
-    font-family: Helvetica, 'Times New Roman', Times, serif;
-}
+
+/*Contact*/
 
 .contact{
     background-color: beige;
@@ -132,10 +140,16 @@ span .dot{
     color: blue;
 }
 
+/*Footer*/
+
+footer {
+    
+}
+
+/*Sticky*/
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
-
