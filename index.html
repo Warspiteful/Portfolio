@@ -57,36 +57,10 @@
     </div>
     <div class = "portfolio" id = "portfolio">
         <h1>Portfolio</h1>
-        <div class="row">
-            <div class="column">
-              <img src="./Resources/Images/3DPrint.jpg" alt="3D Printing" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="./Resources/Images/Website.png" alt="Number Guessing Game" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="./Resources/Images/dunkTank.jpg" alt="Dunk Tank" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="./Resources/Images/Solidworks.jpg" alt="Solidworks" onclick="myFunction(this);">
-            </div>
-          </div>
-   
-
-    <!-- The expanding image container -->
-<div class="container">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:100%">
-  
-    <!-- Image text -->
-    <div id="imgtext"></div>
-    </div>
-
+        
+<h2 style = "text-align: center">Eight Queens Puzzle</h2>
 <?prettify?>
-<pre class="prettyprint lang-py linenums " >from queens import *
+<pre class="prettyprint lang-py linenums box">from queens import *
 from boardManager import *
 board = [(i, j) for j in range(1,9) for i in range(1,9)]  
 bm = boardManager()
@@ -122,7 +96,34 @@ for x, y in board:
 bm.removeActive()
 print(len(bm.getSolutions()))</pre>
 </div>
-    </div>
+<h2 style = "text-align: center">Project Gallery</h2>
+        <div class="row">
+            <div class="column">
+              <img src="./Resources/Images/3DPrint.jpg" alt="3D Printing" onclick="myFunction(this);" onload ="myFunction(this); ">
+            </div>
+            <div class="column">
+              <img src="./Resources/Images/Website.png" alt="Number Guessing Game" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="./Resources/Images/dunkTank.jpg" alt="Dunk Tank" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="./Resources/Images/Solidworks.jpg" alt="Solidworks" onclick="myFunction(this);">
+            </div>
+          </div>
+   
+
+    <!-- The expanding image container -->
+<div class="container">    
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:50%; display: block;
+    margin-left: auto;
+    margin-right: auto;">
+  
+    <!-- Image text -->
+    <div id="imgtext" style = "margin: 0 25%"></div>
+</div>
     <div class = "contact" id = "contact">
         <h1>Contact Me</h1>
         <p>Want to get in touch?
