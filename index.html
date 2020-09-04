@@ -6,7 +6,7 @@
     <title></title>
     <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
+    <link href="./Resources/jawj-github-widget-5ff3cc3/github-widget.css" rel="stylesheet" type="text/css" />
 </head>
 
 <header>
@@ -56,45 +56,9 @@
         </div>
     </div>
     <div class = "portfolio" id = "portfolio">
-        <h1>Portfolio</h1>
-        
-<h2 style = "text-align: center">Eight Queens Puzzle</h2>
-<?prettify?>
-<pre class="prettyprint lang-py linenums box">from queens import *
-from boardManager import *
-board = [(i, j) for j in range(1,9) for i in range(1,9)]  
-bm = boardManager()
-for x, y in board:
-    if(queens([x,y]).canPlace(bm.getActive())):
-        bm.appendActive(queens([x,y]))
-        for x, y in board:
-            if(queens([x,y]).canPlace(bm.getActive())):
-                bm.appendActive(queens([x,y]))
-                for x, y in board:
-                    if(queens([x,y]).canPlace(bm.getActive())):
-                        bm.appendActive(queens([x,y]))
-                        for x, y in board:
-                            if(queens([x,y]).canPlace(bm.getActive())):
-                                bm.appendActive(queens([x,y]))
-                                for x, y in board:
-                                    if(queens([x,y]).canPlace(bm.getActive())):
-                                        bm.appendActive(queens([x,y]))
-                                        for x, y in board:
-                                            if(queens([x,y]).canPlace(bm.getActive())):
-                                                bm.appendActive(queens([x,y]))
-                                                for x, y in board:
-                                                    if(queens([x,y]).canPlace(bm.getActive())):
-                                                        bm.appendActive(queens([x,y]))
-                                                        bm.saveSolution()
-                                                        bm.removeActive()
-                                                bm.removeActive()
-                                        bm.removeActive()
-                                bm.removeActive()
-                        bm.removeActive()
-                bm.removeActive()
-        bm.removeActive()
-bm.removeActive()
-print(len(bm.getSolutions()))</pre>
+        <h1>Github Portfolio</h1>
+        <div class="github-widget" data-user="Warspiteful"></div>
+
 </div>
 <h2 style = "text-align: center">Project Gallery</h2>
         <div class="row">
@@ -105,10 +69,10 @@ print(len(bm.getSolutions()))</pre>
               <img src="./Resources/Images/Website.png" alt="Number Guessing Game" onclick="myFunction(this);">
             </div>
             <div class="column">
-              <img src="./Resources/Images/dunkTank.jpg" alt="Dunk Tank" onclick="myFunction(this);">
+              <img src="./Resources/Images/dunkTankNew.jpg" alt="Dunk Tank" onclick="myFunction(this);">
             </div>
             <div class="column">
-              <img src="./Resources/Images/Solidworks.jpg" alt="Solidworks" onclick="myFunction(this);">
+              <img src="./Resources/Images/TextAnalyst.PNG" alt="Telegram JSON Analyzer" onclick="myFunction(this);">
             </div>
           </div>
    
@@ -134,7 +98,7 @@ print(len(bm.getSolutions()))</pre>
 <footer>
 
 </footer>
-
+<script src="./Resources/jawj-github-widget-5ff3cc3/github-widget.min.js"></script>
 <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};

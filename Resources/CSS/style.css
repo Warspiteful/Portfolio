@@ -58,6 +58,7 @@ header nav li {
   
 }
 
+
 .Banner::before {
   position: absolute;
   content: "";
@@ -66,6 +67,7 @@ header nav li {
   width: 100%;
   height: 100%;
   background-color: rgba(200, 128, 0, 0.5);
+  
   
 }
 
@@ -137,6 +139,7 @@ header nav li {
 .column img {
   max-width: 100%;
   width: auto;
+  height: auto;
   opacity: 0.8;
   cursor: pointer;
 }
