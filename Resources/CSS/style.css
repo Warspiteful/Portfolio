@@ -136,14 +136,22 @@ header nav li {
 }
 
 /* Style the images inside the grid */
-.column img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+.column .img_holder {
+  width: 100%;
+  height: 300px;
   opacity: 0.8;
   cursor: pointer;
+
 }
 
+.column .img_holder img {
+  width:100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit:cover;
+  
+  
+}
 .column img:hover {
   opacity: 1;
 }
