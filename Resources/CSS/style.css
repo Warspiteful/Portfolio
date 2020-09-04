@@ -149,8 +149,10 @@ header nav li {
   height: 100%;
   max-width: 100%;
   object-fit:cover;
-  
-  
+}
+
+#chatbot {
+  object-fit: fill;
 }
 .column img:hover {
   opacity: 1;
