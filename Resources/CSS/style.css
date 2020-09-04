@@ -151,7 +151,7 @@ header nav li {
   object-fit:cover;
 }
 
-#chatbot {
+#chatbot img{
   object-fit: fill;
 }
 .column img:hover {
