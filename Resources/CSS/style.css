@@ -81,6 +81,14 @@ hr{
   max-width: 250px;
   border-top: 5px solid #ffffff; 
 }
+
+ h1 {
+  text-align: center;
+}
+
+.blackhr hr{
+  border-top: 5px solid black; 
+}
 .aboutMe .desc, .aboutMe .skills{
     display: inline-block;
     vertical-align:top;
@@ -93,7 +101,8 @@ hr{
 
 .education{
     text-align: center;
-    background-color: white;
+    background-color: #4a4a4a;
+    color: white;
     padding: 50px;
 }
 
@@ -117,7 +126,6 @@ hr{
 /*Portfolio*/
 .portfolio{
   text-align: center;
-  background-color: #e8f9fd;
   padding: 50px;
 }
 /* The grid: Four equal columns that floats next to each other */
@@ -156,13 +164,16 @@ hr{
   display: table;
   clear: both;
 }
-
+.gallery{
+  background-color: #4a4a4a;
+  color: white;
+}
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
   margin: 0 auto;
-  background-color: #e8f9fd
+ 
 }
 
 /* Expanding image text */
@@ -183,7 +194,7 @@ hr{
 /*Contact*/
 
 .contact{
-  background-color: white;
+   background-color: white;
 }
 .contact p{
     margin: 0 auto;
