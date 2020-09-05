@@ -6,11 +6,6 @@ body {
   margin: 0;
 }
 
-body h1 {
-  text-align: center;
-  margin: 0 auto; 
-  padding-bottom: 1%;  
-}
 
 a {
   text-decoration: none;
@@ -29,13 +24,12 @@ header {
 }
 
 header nav {
-  background-color:rgb(255,255,255);
+  background-color:black;
   width: 100%;
   display: table;
-  margin: 0 auto;
-  color: #4a4a4a;
+  color: white;
   padding: 30px 0;
-  text-align: center;
+  text-align: right;
 }
 
 
@@ -47,52 +41,46 @@ header nav li {
   padding: 0 10px;
 }
 
-/* Banner */
 
-.Banner {
-    margin: 0;
-  position: relative;
-  background: url("../Images/Background.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 100px 0px;
-  
+
+.Name {
+  padding: 0 35% 0 0;
+  margin: 0 auto; 
 }
 
-
-.Banner::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(232,249,253,0.5);
-  
-  
+.intro {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 2% 0;
 }
-
-.Banner h1 {
+.nameDisplay{
   text-align: center;
-  position: relative;
+  margin: 0 auto; 
+  padding: auto 0;
 }
-
-
 /* About Me */
 
 .aboutMe {
-    background-color: #e8f9fd;
+    background-color: white;
     padding: 50px;
-    
+    color: black;
 }
 
-.aboutMe img {
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  padding-left: 5%;
-  
+.face_image img{
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
+
+
+hr{
+  max-width: 250px;
+  border-top: 5px solid #ffffff; 
+}
 .aboutMe .desc, .aboutMe .skills{
     display: inline-block;
     vertical-align:top;
