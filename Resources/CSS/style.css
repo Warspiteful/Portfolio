@@ -136,6 +136,7 @@ hr{
 }
 /* The grid: Four equal columns that floats next to each other */
 .column {
+  position: relative;
   float: left;
   width: 23%;
   padding: 10px;
@@ -167,13 +168,17 @@ hr{
   width:100%;
   height: 100%;
   max-width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 #chatbot img{
   object-fit: fill;
 }
-.column img:hover {
+.column:hover .overlayLeft {
+  width:100%;
+}
+
+.column:hover .overlay {
   opacity: 1;
 }
 
@@ -187,12 +192,33 @@ hr{
   background-color: #4a4a4a;
   color: white;
 }
+
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eeeeee;
+}
+
+.text{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayLeft{
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+}
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
   margin: 0 auto;
- 
 }
 
 /* Expanding image text */
