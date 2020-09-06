@@ -4,6 +4,8 @@ html{
 
 body {
   margin: 0;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
 }
 
 
@@ -84,16 +86,19 @@ hr{
 
  h1 {
   text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
 }
+
 
 .blackhr hr{
   border-top: 5px solid black; 
 }
-.aboutMe .desc, .aboutMe .skills{
-    display: inline-block;
-    vertical-align:top;
+.aboutMe .who, .aboutMe .skills{
+    display: block;
     width: 25%;
-    padding-left: 5%;
+    padding: 0 0;
     min-width: 10%;
 }
 
@@ -135,6 +140,10 @@ hr{
   padding: 10px;
 }
 
+.columntxt{
+  float: left;
+  width: 50%;
+}
 /* Style the images inside the grid */
 .column .img_holder {
   width: 100%;
