@@ -137,13 +137,15 @@ hr{
 /* The grid: Four equal columns that floats next to each other */
 .column {
   position: relative;
-  float: left;
+ 
   width: 23%;
   padding: 10px;
+  display: inline-block;
 }
 
 .rowtxt{
   margin: 0 10%;
+  text-align: left;
 }
 .rowtxt:after {
   content: "";
@@ -154,6 +156,9 @@ hr{
   float: left;
   width: 45%;
   padding: 0 2%;
+}
+.columntxt h2,.columntxt p {
+  margin: 2% 0;
 }
 /* Style the images inside the grid */
 .column .img_holder {
@@ -174,6 +179,7 @@ hr{
 #chatbot img{
   object-fit: fill;
 }
+
 .column:hover .overlayLeft {
   width:100%;
 }
@@ -191,18 +197,25 @@ hr{
 .gallery{
   background-color: #4a4a4a;
   color: white;
+  padding: 2% 0 5% 0;
 }
 
+.centerList{
+  text-align: left;
+  list-style: disc;
+  padding-inline-start: 40px;
+}
 .overlay{
   position: absolute;
   transition: all .3s ease;
   opacity: 0;
-  background-color: #eeeeee;
+  background-color: black;
 }
 
 .text{
-  color: black;
+  color: white;
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -212,7 +225,7 @@ hr{
   height: 100%;
   top: 0;
   left: 0;
-  width: 0;
+  width: 100%;
 }
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
@@ -221,25 +234,13 @@ hr{
   margin: 0 auto;
 }
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: black;
-  font-size: 20px;
-}
 
 
-.box{
-  margin: 0 auto;
-  width: 50%;
-  font-size: 10px;
-}
 /*Contact*/
 
 .contact{
    background-color: white;
+   padding: 2% 0 2% 0  ;
 }
 .contact p{
     margin: 0 auto;
@@ -254,7 +255,10 @@ hr{
 /*Footer*/
 
 footer {
-    
+    text-align: center;
+    padding: 2% 0;
+    background-color: black;
+    color: white;
 }
 
 /*Sticky*/
