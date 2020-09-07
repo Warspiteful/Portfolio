@@ -46,7 +46,7 @@ header nav li {
 
 
 .Name {
-  padding: 0 55% 0 0;
+  padding: 0 50% 0 0;
   margin: 0 auto; 
   text-transform: uppercase;
 }
@@ -242,14 +242,23 @@ hr{
    background-color: white;
    padding: 2% 0 2% 0  ;
 }
+
+.spacer li{
+  padding: 1% 0;
+}
 .contact p{
     margin: 0 auto;
     text-align: center;
     width: 30%;
 }
-.contact a{
+a{
     text-decoration: underline;
     color: blue;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
 
 /*Footer*/
