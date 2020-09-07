@@ -4,13 +4,10 @@ html{
 
 body {
   margin: 0;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
 }
 
-body h1 {
-  text-align: center;
-  margin: 0 auto; 
-  padding-bottom: 1%;  
-}
 
 a {
   text-decoration: none;
@@ -29,13 +26,12 @@ header {
 }
 
 header nav {
-  background-color:rgb(255,255,255);
+  background-color:black;
   width: 100%;
   display: table;
-  margin: 0 auto;
-  color: #4a4a4a;
+  color: white;
   padding: 30px 0;
-  text-align: center;
+  text-align: right;
 }
 
 
@@ -47,57 +43,63 @@ header nav li {
   padding: 0 10px;
 }
 
-/* Banner */
 
-.Banner {
-    margin: 0;
-  position: relative;
-  background: url("../Images/Background.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 100px 0px;
-  
+
+.Name {
+  padding: 0 50% 0 0;
+  margin: 0 auto; 
+  text-transform: uppercase;
 }
 
-
-.Banner::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(232,249,253,0.5);
-  
-  
+.intro {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 2% 0;
 }
-
-.Banner h1 {
+.nameDisplay{
   text-align: center;
-  position: relative;
+  margin: 0 auto; 
+  padding: auto 0;
 }
-
-
 /* About Me */
 
 .aboutMe {
-    background-color: #e8f9fd;
+    background-color: white;
     padding: 50px;
-    
+    color: black;
 }
 
-.aboutMe img {
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  padding-left: 5%;
-  
+.face_image img{
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.aboutMe .desc, .aboutMe .skills{
-    display: inline-block;
-    vertical-align:top;
+
+
+hr{
+  max-width: 250px;
+  border-top: 5px solid #ffffff; 
+}
+
+ h1 {
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+
+.blackhr hr{
+  border-top: 5px solid black; 
+}
+.aboutMe .who, .aboutMe .skills{
+    display: block;
     width: 25%;
-    padding-left: 5%;
+    padding: 0 0;
     min-width: 10%;
 }
 
@@ -105,7 +107,8 @@ header nav li {
 
 .education{
     text-align: center;
-    background-color: white;
+    background-color: #4a4a4a;
+    color: white;
     padding: 50px;
 }
 
@@ -129,16 +132,34 @@ header nav li {
 /*Portfolio*/
 .portfolio{
   text-align: center;
-  background-color: #e8f9fd;
   padding: 50px;
 }
 /* The grid: Four equal columns that floats next to each other */
 .column {
-  float: left;
+  position: relative;
+ 
   width: 23%;
   padding: 10px;
+  display: inline-block;
 }
 
+.rowtxt{
+  margin: 0 10%;
+  text-align: left;
+}
+.rowtxt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columntxt{
+  float: left;
+  width: 45%;
+  padding: 0 2%;
+}
+.columntxt h2,.columntxt p {
+  margin: 2% 0;
+}
 /* Style the images inside the grid */
 .column .img_holder {
   width: 100%;
@@ -152,13 +173,18 @@ header nav li {
   width:100%;
   height: 100%;
   max-width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 #chatbot img{
   object-fit: fill;
 }
-.column img:hover {
+
+.column:hover .overlayLeft {
+  width:100%;
+}
+
+.column:hover .overlay {
   opacity: 1;
 }
 
@@ -168,49 +194,80 @@ header nav li {
   display: table;
   clear: both;
 }
+.gallery{
+  background-color: #4a4a4a;
+  color: white;
+  padding: 2% 0 5% 0;
+}
 
+.centerList{
+  text-align: left;
+  list-style: disc;
+  padding-inline-start: 40px;
+}
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: black;
+}
+
+.text{
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayLeft{
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
   margin: 0 auto;
-  background-color: #e8f9fd
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: black;
-  font-size: 20px;
 }
 
 
-.box{
-  margin: 0 auto;
-  width: 50%;
-  font-size: 10px;
-}
+
 /*Contact*/
 
 .contact{
-  background-color: white;
+   background-color: white;
+   padding: 2% 0 2% 0  ;
+}
+
+.spacer li{
+  padding: 1% 0;
 }
 .contact p{
     margin: 0 auto;
     text-align: center;
     width: 30%;
 }
-.contact a{
+a{
     text-decoration: underline;
     color: blue;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
 
 /*Footer*/
 
 footer {
-    
+    text-align: center;
+    padding: 2% 0;
+    background-color: black;
+    color: white;
 }
 
 /*Sticky*/

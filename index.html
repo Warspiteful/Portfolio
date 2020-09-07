@@ -11,14 +11,13 @@
 </head>
 
 <header>
-    <div class = "Banner">
-        <h1>Justin Almendral</h1>
-    </div>
     <nav id = "nav">
-   
+        <li><a class = "Name">Justin Almendral</a></li>
+
         <li><a  href="#aboutMe">About Me</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a  href="#portfolio">Portfolio</a></li>
+        <li><a  href="#myWork">My Work</a></li>
+        <li><a  href="#gallery">Gallery</a></li>
         <li><a href  = "#contact">Contact</a></li>
 </nav>
 </header>
@@ -27,27 +26,47 @@
 
 
 <body>
-    <div class = "aboutMe" id = "aboutMe">
-        <h1>ABOUT ME</h1>
-        
-        <img src = "./Resources/Images/Portrait.jpg">
-        <div class = "desc">
-            <h2>Who am I?</h2>
-            <p>I'm a Computer Engineering student who loves anything in robotics and programming. Whether it's learning a new computer
-                language or a whole new software, I thrive on curiosity and exploration of processes old and new!</p>
+    
+    <div class = "intro">
+        <div class = "face_image">
+            <img src = "./Resources/Images/Portrait.jpg">
         </div>
-        <div class = "skills">
-            <h2>My Languages:</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                
-            </ul>
+        <div class = "nameDisplay">
+            <h1>Justin Almendral</h1>
+            <hr>
+            <h2>Computer Engineering Student</h2>
         </div>
     </div>
+    <div class = "aboutMe blackhr" id = "aboutMe">
+        <h1>About Me</h1>
+        <hr>
+        <div class = "desc">
+            <div class="rowtxt">
+                <div class="columntxt">
+                        <h2>Who am I?</h2>
+                        <p>As an enterprising student at Northeastern's College of Engineering, I've dedicated myself to exploring the field of robotics as well as the ethical considerations involved in today's technology. I am proficient in both Java and Python, while also familiarizing myself with languages such as C++, PHP, and Go. This website was hand-coded by myself to put into practice the lessons I've learned in HTML and CSS during quarantine.</p>
+                        
+                        <p>I love exploring possibilities and seeing how systems can not only be made, but improved. While any sort of engineering problem can catch my interest, my passion lies in real-world problems with a customer-focused purpose. I'm looking for a collaborative team role that can allow me to not only delve into unknown, but also create a human connection with clients.</p>
+                        <a href="Resources/Resume/JustinAlmendralResume.pdf" target="_blank">Download my Resume here</a>
+
+                </div>
+                <div class="columntxt">
+                    <h2>Highlights</h2>
+                    <div class = "centerList spacer">
+                        <li>6 month internship at civil engineering firm <a href = "http://www.grottoengineering.com/">Grotto Engineering</a></li>
+                        <li>Boy Scout of America Eagle Scout Rank</li>
+                        <li>Majoring in Computer Engineering with Minors in Robotics and Information Ethics</li>
+                    </div>
+                    <h2></h2>
+                </div>
+               
+              </div>
+            
+    </div>
+</div>
     <div class = "education" id = "education">
         <h1>Education</h1>
+        <hr>
         <div class = "desc">
             <h2>Northeastern University</h2>
             <div class = "degree">
@@ -56,56 +75,97 @@
             <p>Graduating in 2023</p>
         </div>
     </div>
-    <div class = "portfolio" id = "portfolio">
-        <h1>Github Portfolio</h1>
-        <div class="github-widget" data-user="Warspiteful"></div>
+    <div class = "portfolio blackhr" id = "myWork">
+        <h1>My Work</h1>
+        <hr>
+        <div class="rowtxt">
+            <div class="columntxt">
+                <p>My personal interests include:</p>
+                <div class = "centerList">
+                    <ul>
+                        <li><strong>3D Printing.</strong> With experience in modeling programs such as Solidworks, OnShape, and Fusion 360 along with my Ender 3 Printer, I love using 3D printing as a way to quickly turn ideas into models, and then into real-world objects.</li>
+                        <li><strong>Virtual Reality/Augmented Reality.</strong> As an engineer in a field that that tackles both hardware and software, VR and AR serve as an amazing way to combine these two fields in a fun and meaningful way that still lets me separate my personal and professional spheres.</li>
+                        <li><strong>Game Development.</strong> Games provide a unique medium for creativity, mixing technical prowess with an artistic image. I've dabbled in both Godot and Unity, intrigued by what emotions and ideas games can evoke.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columntxt">
+                <h2>Projects</h2>
+                <div class = "centerList">
+                <ul>
+                    <li>Telegram JSON Analysis</li>
+                    <li>Rule-Based Chatbot</li>
+                </ul>
+                <h2>Engineering Clubs</h2>
+                <ul>
+                    <li>Northeastern Virtual Reality Club</li>
+                    <li>Northeastern Electric Racing Club</li>
+                </ul>
+                <h2>Other things</h2>
+                <ul>
+                    <li>School Tutor with EVKids</li>
+                    <li>Worked as a playtester for Picatinny Arsenal</li>
+                </ul>
+            </div>
+                
+            </div>
+           
+          </div>
+        
 
 </div>
-<h2 style = "text-align: center">Project Gallery</h2>
+
+<div class = "gallery" id = "gallery">
+<h1 style = "text-align: center">Portfolio Gallery</h1>
+<hr>
         <div class="row">
             <div class="column">
                 <div class = "img_holder">
-              <img src="./Resources/Images/3DPrint.jpg" alt="3D Printing" onclick="myFunction(this);" onload ="myFunction(this); ">
+              <img src="./Resources/Images/3DPrint.jpg" alt="3D Printing">
+              <div class = "overlay overlayLeft">
+                  <div class = "text">3D Printing</div>
+                  </div>
             </div>
             </div>
             <div class="column">
                 <div class = "img_holder" id = "chatbot">
-              <img src="./Resources/Images/Chatbot.PNG" alt="Rule-Based Chatbot" onclick="myFunction(this);">
+              <img src="./Resources/Images/Chatbot.PNG" alt="Rule-Based Chatbot">
+              <div class = "overlay overlayLeft">
+                <div class = "text">Chatbot</div>
+                </div>
             </div>
             </div>
             <div class="column">
                 <div class = "img_holder">
-              <img src="./Resources/Images/dunkTankNew.jpg" alt="Dunk Tank" onclick="myFunction(this);">
+              <img src="./Resources/Images/dunkTankNew.jpg" alt="Dunk Tank">
+              <div class = "overlay overlayLeft">
+                <div class = "text">Dunk Tank</div>
+                </div>
             </div>
             </div>
             <div class="column">
                 <div class = "img_holder">
-              <img src="./Resources/Images/TextAnalyst.PNG" alt="Telegram JSON Analyzer" onclick="myFunction(this);">
+              <img src="./Resources/Images/TextAnalyst.PNG" alt="Telegram JSON Analyzer">
+              <div class = "overlay overlayLeft">
+                <div class = "text">Telegram JSON Analyzer</div>
+                </div>
             </div>
             </div>
           </div>
-   
+        </div>
 
     <!-- The expanding image container -->
-<div class="container">    
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:60%; height: 600px; display: block;   object-fit:contain;
-    margin-left: auto;
-    margin-right: auto;">
-  
-    <!-- Image text -->
-    <div id="imgtext" style = "margin: 0 25%"></div>
-</div>
-    <div class = "contact" id = "contact">
+
+    <div class = "contact blackhr" id = "contact">
         <h1>Contact Me</h1>
+        <hr>
         <p>Want to get in touch?
             Drop me an e-mail at <a href="mailto:jalmendral24@gmail.com">jalmendral24@gmail.com</a>!</p>
     </div>
 </body>
 
 <footer>
-
+    Copyright &#169; Justin Almendral 2020
 </footer>
 <script src="./Resources/jawj-github-widget-5ff3cc3/github-widget.min.js"></script>
 <script type="text/javascript">
