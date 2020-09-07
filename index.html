@@ -159,9 +159,33 @@
     <div class = "contact blackhr" id = "contact">
         <h1>Contact Me</h1>
         <hr>
-        <p>Want to get in touch?
-            Drop me an e-mail at <a href="mailto:jalmendral24@gmail.com">jalmendral24@gmail.com</a>!</p>
+    
+
+          <div class="container columnForm">
+            
+            <form action="https://formspree.io/mgengkrq" method="POST">
+            <div class = "rowForm">
+              <label for="nameEntry">Name</label>
+              <br>
+              <input type="text" id="nameEntry" name="name" placeholder="Your Name..">
+            </div>
+            <div class = "rowForm">
+              <label for="email">Email</label>
+              <br>
+              <input type="text" id="emailEntry" name="email" placeholder="Your Email..">
+            </div>
+            <div class = "rowForm">
+              <label for="subject">Subject</label>
+              <br>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+            <div class = "rowForm">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
     </div>
+
 </body>
 
 <footer>
