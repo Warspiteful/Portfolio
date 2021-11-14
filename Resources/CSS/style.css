@@ -3,7 +3,11 @@ html{
    
 }
 
-
+body {
+  margin: 0;  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  background-image: url('/Resources/Images/moroccan-flower.png');
+}
 
 
 a {
@@ -22,78 +26,312 @@ header {
   width: 100%;
 }
 
-.navigation{
-  width: 100vw;
-  height: 90px;
-  background: rgba(255, 255, 255, 0.9);
-  height: 54px !important;
+header nav {
+  background-color:black;
   width: 100%;
-  position: fixed;        
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  direction: row;
-  justify-content: space-between;
+  display: table;
+  color: white;
+  padding: 30px 0;
+  text-align: right;
 }
 
-.container
-{
-  padding-left: 0;
-  padding-right: 0;
+
+header nav li {
+  display: inline;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
-html,
-body {
-  height: 100%;
-  line-height: 1.8;
-  background: #141415;
-  position: relative;
-  font-size: 10px;
-  overflow-x: hidden;
+ .github img{
+  width:2%;
+  height:auto;
+  margin-bottom: -0.5%;
+  padding: 0 15% 0 0;
 }
 
-.portfolio_item
-{
-  position: relative;
-  overflow: hidden;
+.icon img{
+  width:2%;
+  height:auto;
+  margin-bottom: -0.5%;
+  padding: 0 0 0 0;
+}
+
+.resume{
+  width: 50%;
+  margin: auto;
+}
+
+.Name {
+  padding: 0 0% 0 0;
+  margin: 0 auto; 
+  text-transform: uppercase;
+}
+
+.intro {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 2% 0;
+}
+.nameDisplay{
+  text-align: center;
+  margin: 0 auto; 
+  padding: auto 0;
+}
+/* About Me */
+
+.aboutMe {
+   
+    padding: 50px;
+    color: black;
+}
+
+.face_image img{
   display: block;
-  overflow: hidden;
+  margin: 0 auto;
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.portfolio_item .portfolio_item_hover {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+
+.side_image img{
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+
+hr{
+  max-width: 250px;
+  border-top: 5px solid #ffffff; 
+}
+
+ h1 {
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+
+.blackhr hr{
+  border-top: 5px solid black; 
+}
+.aboutMe .who, .aboutMe .skills{
+    display: block;
+    width: 25%;
+    padding: 0 0;
+    min-width: 10%;
+}
+
+/*Education*/
+
+.education{
+    text-align: center;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 50px;
+}
+
+ .education .desc h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.education .dot{
+  content: "\00B7";
+}
+
+/*Degree*/
+
+.degree{
+    
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/*Portfolio*/
+.portfolio{
+  text-align: center;
+  padding: 50px;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  position: relative;
+  width: 23%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.columnForm{
+  width: 50%;
+  margin: auto auto;
+
+}
+
+.rowForm{
+  width:50%;
+  margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  
+}
+
+.rowtxt{
+  margin: 0 10%;
+  text-align: left;
+}
+.rowtxt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columntxt{
+  float: left;
+  width: 45%;
+  padding: 0 2%;
+}
+.columntxt h2,.columntxt p {
+  margin: 2% 0;
+}
+/* Style the images inside the grid */
+.column .img_holder {
+  width: 100%;
+  height: 300px;
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+.column .img_holder img {
+  width:100%;
   height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: translate(-100%);
-  transform: translate(-100%);
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#chatbot img{
+  object-fit: fill;
+}
+
+.column:hover .overlayLeft {
+  width:100%;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery{
+  background-color: #4a4a4a;
+  color: white;
+  padding: 2% 0 5% 0;
+}
+
+.centerList{
+  text-align: left;
+  list-style: disc;
+  padding-inline-start: 40px;
+}
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  background-color: black;
 }
 
+.text{
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-.col-sm-12 img {
-  object-fit: cover;
+.center{
+  text-align: center;
+}
+
+.overlayLeft{
+  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 50vh;
 }
 
-.col-md-12 img {
-  height: 50vh;
+
+
+
+/*Contact*/
+
+.contact{
+   background-color: white;
+   padding: 2% 0 2% 0  ;
+}
+
+.spacer li{
+  padding: 1% 0;
+}
+.contact p{
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
+a{
+    text-decoration: underline;
+    color: blue;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    padding: 2% 0;
+    background-color: black;
+    color: white;
+}
+
+/*Sticky*/
+
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-}
-
-.col-sm-6 img {
-  object-fit: cover;
-  width: 100%;
-  height: 50vh;
-}
-
-.no-padding [class^=col-]{
-  padding-left: 0;
-  padding-right: 0;
 }
