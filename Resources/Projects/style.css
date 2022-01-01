@@ -1,0 +1,48 @@
+h3
+{
+    color: black;
+}
+
+#intro-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row-reverse;
+    transform: scale(0.8);
+  }
+
+  #box-intro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: auto;
+    filter: brightness(0.95);
+    position: relative;
+  }
+
+  .container
+{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.yt-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 70.25%;
+  }
+  .yt-container .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.h-30 {
+    height: 30px;
+}

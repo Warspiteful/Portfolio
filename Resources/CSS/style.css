@@ -13,7 +13,7 @@ a {
 
 
 p{
-  font-family: Helvetica, 'Times New Roman', Times, serif;
+  font-family: orpheus-pro;
 }
 
 /* Header */
@@ -39,6 +39,17 @@ header {
   font-size: 16px;
 }
 
+#projects #portfolio-label
+{
+
+}
+
+#projects h2 
+{
+  text-align: center;
+  color: white;
+}
+
 #intro-cell h5 {
   text-align: left;
   letter-spacing: 4px;
@@ -49,6 +60,7 @@ header {
 
 #box-intro h1 {
   font-size: 32px !important;
+  font-family: orpheus-pro;
 }
 
 #intro-cell {
@@ -150,6 +162,7 @@ body {
   height: 50vh;
 }
 
+
 #box-intro:before {
   content: "";
   position: absolute;
@@ -161,7 +174,6 @@ body {
   right: -500px;
   bottom: -500px;
   left: -500px;
-  background: transparent url("../img/noise.png") 0 0;
   opacity: 0.08;
   background-size: 320px 320px;
   animation: noise 12s steps(8, end) infinite both;
@@ -169,7 +181,7 @@ body {
 
 .navigation .other_links {
   display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, max-content);
   grid-gap: 30px;
   margin-right: 60px;
 }
@@ -200,4 +212,25 @@ body {
 .no-padding [class^=col-]{
   padding-left: 0;
   padding-right: 0;
+}
+
+.item_info em {
+  font-style: normal;
+  display: inline-block;
+  background-color: #c2bcb9;
+  padding: 5px 20px;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out 0.3s;
+  opacity: 0;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.portfolio_item:hover .item_info em,
+.portfolio_item:hover .item_info span {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
