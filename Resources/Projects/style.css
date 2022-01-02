@@ -3,6 +3,12 @@ h3
     color: black;
 }
 
+body{
+  background: #141415;
+  color: #ebecea;
+  font-family: "CircularStd", sans-serif;
+}
+
 #intro-cell {
     display: flex;
     justify-content: center;
@@ -10,6 +16,7 @@ h3
     position: relative;
     flex-direction: row-reverse;
     transform: scale(0.8);
+
   }
 
   #box-intro {
@@ -21,6 +28,7 @@ h3
     width: auto;
     filter: brightness(0.95);
     position: relative;
+    background-color: black;
   }
 
   .container
@@ -45,4 +53,10 @@ h3
 
 .h-30 {
     height: 30px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  color: #ebecea;
+  font-family: "Termina", sans-serif;
 }
