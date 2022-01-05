@@ -249,3 +249,9 @@ footer
 {
   background-color: black;
 }
+
+.row::before
+{
+  display: table;
+  content: " ";
+}
