@@ -5,10 +5,9 @@ html{
 
 
 
-
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 
@@ -32,6 +31,8 @@ header {
   width: 100vw;
   filter: brightness(0.95);
   position: relative;
+  background-color: #141415;
+
 }
 
 #intro-cell p {
@@ -47,7 +48,7 @@ header {
 #projects h2 
 {
   text-align: center;
-  color: black;
+  
 }
 
 #intro-cell h5 {
@@ -62,6 +63,7 @@ header {
   font-size: 32px !important;
   font-family: orpheus-pro;
 }
+
 
 #intro-cell {
   display: flex;
@@ -110,10 +112,12 @@ html,
 body {
   height: 100%;
   line-height: 1.8;
-  background: #141415;
+  background: black;
+  color: white;
   position: relative;
   font-size: 10px;
   overflow-x: hidden;
+  font-family: "CircularStd", sans-serif;
 }
 
 .links
@@ -239,4 +243,9 @@ body {
   object-fit: cover;
   width: 100%;
   height: 50vh;
+}
+
+footer
+{
+  background-color: black;
 }
