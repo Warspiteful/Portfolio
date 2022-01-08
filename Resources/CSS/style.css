@@ -79,6 +79,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 90px;
+  background-color: black;
   font-size: 1.25rem;
   z-index: 2;
   display: flex;
@@ -120,13 +121,7 @@ body {
   font-family: "CircularStd", sans-serif;
 }
 
-.links
-{
-  display: grid;
-  grid-template-columns: repeat(5, min-content);
-  grid-gap: 30px;
-  margin-left: 60px;
-}
+
 .portfolio_item {
   position: relative;
   overflow: hidden;
@@ -183,11 +178,19 @@ body {
   animation: noise 12s steps(8, end) infinite both;
 }
 
-.navigation .other_links {
+.links
+{
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 30px;
-  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.navigation .other_links {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 15px;
+  margin-right: 30px;
 }
 
 .portfolio_item_hover .item_info
