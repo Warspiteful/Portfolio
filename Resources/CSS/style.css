@@ -239,6 +239,11 @@ body {
   transform: translateX(0);
 }
 
+.col-md-6, .col-sm-12
+{
+  float: left;
+}
+
 .col-sm-12 img {
   object-fit: cover;
   width: 100%;
@@ -255,3 +260,4 @@ footer
   display: table;
   content: " ";
 }
+
