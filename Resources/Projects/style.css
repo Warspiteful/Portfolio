@@ -72,3 +72,20 @@ footer
 {
   background-color: black;
 }
+
+.resume{
+  width: 50%;
+  margin: auto;
+}
+
+.resume h1 {
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+}
+
+.resume a
+{
+  color: #1d1d74;
+  text-decoration: underline;
+}
