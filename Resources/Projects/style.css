@@ -73,10 +73,21 @@ footer
   background-color: black;
 }
 
-.resume{
+.resume
+{
   width: 50%;
   margin: auto;
 }
+
+.img-container
+{
+  width: 50%;
+  height: auto;
+}
+
+
+
+
 
 .resume h1 {
   text-align: center;
