@@ -65,9 +65,8 @@ header {
 
 .navigation {
     opacity: 1;
-    <<<<<<< Updated upstream transition: opacity 0.5s ease, 1s ease;
-    =======transition: opacity 0.5s ease, background 1s ease;
-    >>>>>>>Stashed changes position: fixed;
+    transition: opacity 0.5s ease, background 1s ease;
+    position: fixed;
     width: 100vw;
     height: 90px;
     background-color: black;
@@ -246,7 +245,4 @@ footer {
 .row::before {
     display: table;
     content: " ";
-}
-
-
 }
